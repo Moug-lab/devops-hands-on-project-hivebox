@@ -52,4 +52,73 @@ Here is a pre-start checklist:
 
 ## Implementation
 
-** ADD YOUR IMPLEMENTATION DOCUMENTATION HERE **
+## Implementation
+
+### Phase 1 — Working Environment Setup
+
+**Status:** ✅ Complete
+
+**Branch:** `phase-1`
+
+**Pull Request:** In progress
+
+---
+
+#### 1.1 Project Management
+
+- **Methodology:** Kanban
+- **Tool:** GitHub Projects (Kanban board with 5 columns)
+- **Board columns:** Backlog → Ready → In Progress → In Review → Done
+- **Board link:** [HiveBox DevOps Roadmap Project Board](https://github.com/Moug-lab/devops-hands-on-project-hivebox/projects)
+
+---
+
+#### 1.2 Repository Setup
+
+- Forked from [DevOpsHiveHQ/devops-hands-on-project-hivebox](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox)
+- Working fork: [Moug-lab/devops-hands-on-project-hivebox](https://github.com/Moug-lab/devops-hands-on-project-hivebox)
+- All work done on `phase-1` branch — never pushed directly to `main`
+
+---
+
+#### 1.3 SenseBox Configuration
+
+Three openSenseMap senseBox stations selected for temperature data collection:
+
+| Station | ID |
+|---------|----|
+| Station 1 | `5eba5fbad46fb8001b799786` |
+| Station 2 | `5c21ff8f919bf8001adf2488` |
+| Station 3 | `5ade1acf223bd80019a1011c` |
+
+Full documentation: [`docs/senseboxes.md`](docs/senseboxes.md)
+
+API used: `https://api.opensensemap.org/boxes/{senseBoxId}`
+
+---
+
+#### 1.4 Environment Setup
+
+| Tool | Purpose |
+|------|---------|
+| Kali Linux VM | Development server |
+| VirtualBox | VM host on Windows 11 |
+| Git + GitHub | Version control and collaboration |
+| SSH / PowerShell | Remote server management |
+
+---
+
+#### 1.5 File Structure
+```
+devops-hands-on-project-hivebox/
+├── docs/
+│   └── senseboxes.md     # senseBox IDs documentation
+├── .env                  # Environment variables (not committed)
+├── .gitignore            # Excludes .env and other local files
+└── README.md             # This file
+```
+
+---
+
+*Implemented by: Mougahed A.B. Mohamed — Engineer, MSAR ALHLWL Information Technology EST*
+*GitHub: [@Moug-lab](https://github.com/Moug-lab)*
