@@ -122,3 +122,88 @@ devops-hands-on-project-hivebox/
 
 *Implemented by: Mougahed A.B. Mohamed — Engineer, MSAR ALHLWL Information Technology EST*
 *GitHub: [@Moug-lab](https://github.com/Moug-lab)*
+---
+
+### Phase 2 — Containers and Initial Version
+
+**Status:** ✅ Complete
+**Branch:** `phase-2`
+
+---
+
+#### 2.1 Tools Used
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Python | 3.11 | Application runtime |
+| Docker | 29.2.1 | Containerization |
+| Git | Latest | Version control |
+
+---
+
+#### 2.2 Application Code
+
+The app is implemented in `app.py` with Semantic Versioning `v0.0.1`.
+
+**Version:** `v0.0.1`
+```python
+APP_VERSION = "v0.0.1"
+
+def print_version():
+    print(f"HiveBox version: {APP_VERSION}")
+```
+
+---
+
+#### 2.3 How to Build the Docker Image
+```bash
+docker build -t moughivebox:v0.0.1 .
+```
+
+Expected output:
+```
+Successfully built xxxxxxxx
+Successfully tagged moughivebox:v0.0.1
+```
+
+---
+
+#### 2.4 How to Test the Application
+
+**Run the container:**
+```bash
+docker run moughivebox:v0.0.1
+```
+
+**Expected output:**
+```
+HiveBox version: v0.0.1
+```
+
+**Verify the image exists:**
+```bash
+docker images | grep moughivebox
+```
+
+**Expected output:**
+```
+moughivebox   v0.0.1   xxxxxxxxxx   ~130MB
+```
+
+---
+
+#### 2.5 File Structure
+```
+devops-hands-on-project-hivebox/
+├── docs/
+│   └── senseboxes.md     # senseBox IDs documentation
+├── app.py                # Main application — prints version
+├── Dockerfile            # Container build instructions
+├── .gitignore            # Excludes .env and local files
+└── README.md             # This file
+```
+
+---
+
+*Implemented by: Mougahed A.B. Mohamed — Engineer, MSAR ALHLWL Information Technology EST*
+*GitHub: [@Moug-lab](https://github.com/Moug-lab)*
