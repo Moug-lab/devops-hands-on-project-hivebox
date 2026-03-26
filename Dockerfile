@@ -8,10 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 
-# Create user
 RUN adduser --disabled-password --gecos "" appuser
-
-# Give permissions (IMPORTANT FIX)
 RUN chown -R appuser:appuser /app
 
 USER appuser

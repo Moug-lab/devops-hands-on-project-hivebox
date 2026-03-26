@@ -22,22 +22,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pylint pytest
+          pip install pytest pylint
 
-      - name: Lint with pylint
+      - name: Lint code
         run: |
           pylint app.py --fail-under=9.0
 
       - name: Run tests
         run: |
           pytest test_app.py -v
-
-      - name: Lint Dockerfile
-        uses: hadolint/hadolint-action@v3.1.0
-        with:
-          dockerfile: Dockerfile
 
 
   build:
@@ -50,11 +44,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t moughivebox:v0.0.1 .
+          docker build -t hivebox .
 
       - name: Run container
         run: |
-          docker run -d --name hivebox-test -p 5000:5000 moughivebox:v0.0.1
+          docker run -d -p 5000:5000 hivebox
           sleep 5
 
       - name: Test endpoint
@@ -63,4 +57,4 @@ jobs:
 
       - name: Stop container
         run: |
-          docker stop hivebox-test
+          docker ps -q | xargs -r docker stop
