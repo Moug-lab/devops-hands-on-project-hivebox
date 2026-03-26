@@ -1,13 +1,27 @@
-# HiveBox - DevOps End-to-End Hands-On Project
-# Phase 2 - Initial version
+"""HiveBox Flask Application.
 
-APP_VERSION = "v0.0.1"
+This module defines a simple API with health and version endpoints.
+"""
+
+from flask import Flask
+
+app = Flask(__name__)
+
+APP_VERSION = "v1.0.0"
 
 
-def print_version():
-    """Print the current application version and exit."""
-    print(f"HiveBox version: {APP_VERSION}")
+@app.route("/")
+def home():
+    """Return basic status message."""
+    return "HiveBox is running!"
+
+
+@app.route("/version")
+def version():
+    """Return application version."""
+    return {"version": APP_VERSION}
 
 
 if __name__ == "__main__":
-    print_version()
+    app.run(host="0.0.0.0", port=5000)
+    
