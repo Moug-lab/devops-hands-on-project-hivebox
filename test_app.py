@@ -38,3 +38,15 @@ def test_invalid_route(client):
     """Test invalid route returns 404."""
     response = client.get("/invalid")
     assert response.status_code == 404
+
+
+def test_temperature_endpoint(client):
+    """Integration test for temperature endpoint."""
+    response = client.get("/temperature")
+    assert response.status_code in [200, 503]
+
+
+def test_metrics_endpoint(client):
+    """Test metrics endpoint."""
+    response = client.get("/metrics")
+    assert response.status_code == 200    
