@@ -1,151 +1,141 @@
-[![Dynamic DevOps Roadmap](https://img.shields.io/badge/Dynamic_DevOps_Roadmap-559e11?style=for-the-badge&logo=Vercel&logoColor=white)](https://devopsroadmap.io/getting-started/)
-[![Community](https://img.shields.io/badge/Join_Community-%23FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://newsletter.devopsroadmap.io/subscribe)
-[![Telegram Group](https://img.shields.io/badge/Telegram_Group-%232ca5e0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/DevOpsHive/985)
-[![Fork on GitHub](https://img.shields.io/badge/Fork_On_GitHub-%2336465D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox/fork)
+[![Dynamic DevOps Roadmap](https://img.shields.io/badge/Dynamic_DevOps_Roadmap-559e11?style=for-the-badge\&logo=Vercel\&logoColor=white)](https://devopsroadmap.io/getting-started/)
+[![Community](https://img.shields.io/badge/Join_Community-%23FF6719?style=for-the-badge\&logo=substack\&logoColor=white)](https://newsletter.devopsroadmap.io/subscribe)
+[![Telegram Group](https://img.shields.io/badge/Telegram_Group-%232ca5e0?style=for-the-badge\&logo=telegram\&logoColor=white)](https://t.me/DevOpsHive/985)
+[![Fork on GitHub](https://img.shields.io/badge/Fork_On_GitHub-%2336465D?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox/fork)
 
-# HiveBox - DevOps End-to-End Hands-On Project
+# 🐝 HiveBox - DevOps End-to-End Hands-On Project
 
 <p align="center">
-  <a href="https://devopsroadmap.io/projects/hivebox" style="display: block; padding: .5em 0; text-align: center;">
-    <img alt="HiveBox - DevOps End-to-End Hands-On Project" border="0" width="90%" src="https://devopsroadmap.io/img/projects/hivebox-devops-end-to-end-project.png" />
-  </a>
-</p>
-
-> [!CAUTION]
-> **[Fork](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox/fork)** this repo, and create PRs in your fork, **NOT** in this repo!
-
-> [!TIP]
-> If you are looking for the full roadmap, including this project, go back to the [getting started](https://devopsroadmap.io/getting-started) page.
-
-This repository is the starting point for [HiveBox](https://devopsroadmap.io/projects/hivebox/), the end-to-end hands-on project.
-
-You can fork this repository and start implementing the [HiveBox](https://devopsroadmap.io/projects/hivebox/) project. HiveBox project follows the same Dynamic MVP-style mindset used in the [roadmap](https://devopsroadmap.io/).
-
-The project aims to cover the whole Software Development Life Cycle (SDLC). That means each phase will cover all aspects of DevOps, such as planning, coding, containers, testing, continuous integration, continuous delivery, infrastructure, etc.
-
-Happy DevOpsing ♾️
-
-## Before you start
-
-Here is a pre-start checklist:
-
-- ⭐ <a target="_blank" href="https://github.com/DevOpsHiveHQ/dynamic-devops-roadmap">Star the **roadmap** repo</a> on GitHub for better visibility.
-- ✉️ <a target="_blank" href="https://newsletter.devopsroadmap.io/subscribe">Join the community</a> for the project community activities, which include mentorship, job posting, online meetings, workshops, career tips and tricks, and more.
-- 🌐 <a target="_blank" href="https://t.me/DevOpsHive/985">Join the Telegram group</a> for interactive communication.
-
-## Preparation
-
-- [Create GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) (if you don't have one), then [fork this repository](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox/fork) and start from there.
-- [Create GitHub project board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) for this repository (use `Kanban` template).
-- Each phase should be presented as a pull request against the `main` branch. Don’t push directly to the main branch!
-- Document as you go. Always assume that someone else will read your project at any phase.
-- You can get senseBox IDs by checking the [openSenseMap](https://opensensemap.org/) website. Use 3 senseBox IDs close to each other (you can use the following [5eba5fbad46fb8001b799786](https://opensensemap.org/explore/5eba5fbad46fb8001b799786), [5c21ff8f919bf8001adf2488](https://opensensemap.org/explore/5c21ff8f919bf8001adf2488), and [5ade1acf223bd80019a1011c](https://opensensemap.org/explore/5ade1acf223bd80019a1011c)). Just copy the IDs, you will need them in the next steps.
-
-<br/>
-<p align="center">
-  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
-    <img src="https://img.shields.io/badge/Get_Started_Now-559e11?style=for-the-badge&logo=Vercel&logoColor=white" />
-  </a><br/>
+  <img src="assets/hivebox-architecture.png" width="900"/>
 </p>
 
 ---
 
-## Implementation
+## 🚀 Project Overview
 
-## Implementation
+**HiveBox** is a production-oriented DevOps project designed to simulate real-world system engineering practices.
 
-### Phase 1 — Working Environment Setup
+The system collects environmental temperature data from beehive sensors (via openSenseMap) and exposes it through a scalable RESTful API.
 
-**Status:** ✅ Complete
+This project follows a **Dynamic DevOps Roadmap**, covering the full Software Development Life Cycle (SDLC):
 
-**Branch:** `phase-1`
-
-**Pull Request:** In progress
-
----
-
-#### 1.1 Project Management
-
-- **Methodology:** Kanban
-- **Tool:** GitHub Projects (Kanban board with 5 columns)
-- **Board columns:** Backlog → Ready → In Progress → In Review → Done
-- **Board link:** [HiveBox DevOps Roadmap Project Board](https://github.com/Moug-lab/devops-hands-on-project-hivebox/projects)
+* Planning
+* Development
+* Containerization
+* CI/CD
+* Monitoring
+* Deployment
 
 ---
 
-#### 1.2 Repository Setup
-
-- Forked from [DevOpsHiveHQ/devops-hands-on-project-hivebox](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox)
-- Working fork: [Moug-lab/devops-hands-on-project-hivebox](https://github.com/Moug-lab/devops-hands-on-project-hivebox)
-- All work done on `phase-1` branch — never pushed directly to `main`
+> ⚠️ **Important**
+> Fork this repository and work on your own copy. Do NOT push directly to the original repo.
 
 ---
 
-#### 1.3 SenseBox Configuration
+## 📋 Before You Start
 
-Three openSenseMap senseBox stations selected for temperature data collection:
+* ⭐ Star the roadmap repository
+* ✉️ Join the DevOps community
+* 🌐 Join the Telegram group
 
-| Station | ID |
-|---------|----|
+---
+
+## ⚙️ Preparation
+
+* Create a GitHub account and fork the repository
+* Create a GitHub Kanban project board
+* Work using feature branches (never push to `main`)
+* Document your progress continuously
+
+---
+
+### 🔗 openSenseMap Setup
+
+Use these sample senseBox IDs:
+
+| Station   | ID                         |
+| --------- | -------------------------- |
 | Station 1 | `5eba5fbad46fb8001b799786` |
 | Station 2 | `5c21ff8f919bf8001adf2488` |
 | Station 3 | `5ade1acf223bd80019a1011c` |
 
-Full documentation: [`docs/senseboxes.md`](docs/senseboxes.md)
+API endpoint:
 
-API used: `https://api.opensensemap.org/boxes/{senseBoxId}`
-
----
-
-#### 1.4 Environment Setup
-
-| Tool | Purpose |
-|------|---------|
-| Kali Linux VM | Development server |
-| VirtualBox | VM host on Windows 11 |
-| Git + GitHub | Version control and collaboration |
-| SSH / PowerShell | Remote server management |
+```
+https://api.opensensemap.org/boxes/{senseBoxId}
+```
 
 ---
 
-#### 1.5 File Structure
+# 🧩 Implementation
+
+---
+
+## 🟢 Phase 1 — Working Environment Setup
+
+**Status:** ✅ Complete
+**Branch:** `phase-1`
+
+### 📌 Project Management
+
+* Methodology: Kanban
+* Tool: GitHub Projects
+* Columns: Backlog → Ready → In Progress → In Review → Done
+
+---
+
+### 📌 Repository Setup
+
+* Forked from the official HiveBox repository
+* Working in `phase-1` branch
+* No direct commits to `main`
+
+---
+
+### 📌 Environment Setup
+
+| Tool             | Purpose              |
+| ---------------- | -------------------- |
+| Kali Linux VM    | Development server   |
+| VirtualBox       | Virtual machine host |
+| Git + GitHub     | Version control      |
+| PowerShell / SSH | Remote management    |
+
+---
+
+### 📌 File Structure
+
 ```
 devops-hands-on-project-hivebox/
 ├── docs/
-│   └── senseboxes.md     # senseBox IDs documentation
-├── .env                  # Environment variables (not committed)
-├── .gitignore            # Excludes .env and other local files
-└── README.md             # This file
+│   └── senseboxes.md
+├── .env
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-*Implemented by: Mougahed A.B. Mohamed — Engineer, MSAR ALHLWL Information Technology EST*
-*GitHub: [@Moug-lab](https://github.com/Moug-lab)*
----
-
-### Phase 2 — Containers and Initial Version
+## 🟡 Phase 2 — Containers and Initial Version
 
 **Status:** ✅ Complete
 **Branch:** `phase-2`
 
 ---
 
-#### 2.1 Tools Used
+### 🐳 Tools Used
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Python | 3.11 | Application runtime |
-| Docker | 29.2.1 | Containerization |
-| Git | Latest | Version control |
+| Tool   | Version | Purpose             |
+| ------ | ------- | ------------------- |
+| Python | 3.11    | Application runtime |
+| Docker | 29.2.1  | Containerization    |
+| Git    | Latest  | Version control     |
 
 ---
 
-#### 2.2 Application Code
+### 🧠 Application Code
 
-The app is implemented in `app.py` with Semantic Versioning `v0.0.1`.
-
-**Version:** `v0.0.1`
 ```python
 APP_VERSION = "v0.0.1"
 
@@ -155,55 +145,55 @@ def print_version():
 
 ---
 
-#### 2.3 How to Build the Docker Image
+### 🐳 Build Docker Image
+
 ```bash
 docker build -t moughivebox:v0.0.1 .
 ```
 
-Expected output:
-```
-Successfully built xxxxxxxx
-Successfully tagged moughivebox:v0.0.1
-```
-
 ---
 
-#### 2.4 How to Test the Application
+### ▶️ Run Container
 
-**Run the container:**
 ```bash
 docker run moughivebox:v0.0.1
 ```
 
-**Expected output:**
+Expected output:
+
 ```
 HiveBox version: v0.0.1
 ```
 
-**Verify the image exists:**
+---
+
+### 🔍 Verify Image
+
 ```bash
 docker images | grep moughivebox
 ```
 
-**Expected output:**
-```
-moughivebox   v0.0.1   xxxxxxxxxx   ~130MB
-```
-
 ---
 
-#### 2.5 File Structure
+### 📂 File Structure
+
 ```
 devops-hands-on-project-hivebox/
 ├── docs/
-│   └── senseboxes.md     # senseBox IDs documentation
-├── app.py                # Main application — prints version
-├── Dockerfile            # Container build instructions
-├── .gitignore            # Excludes .env and local files
-└── README.md             # This file
+│   └── senseboxes.md
+├── app.py
+├── Dockerfile
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-*Implemented by: Mougahed A.B. Mohamed — Engineer, MSAR ALHLWL Information Technology EST*
-*GitHub: [@Moug-lab](https://github.com/Moug-lab)*
+## 👨‍💻 Author
+
+**Mougahed A.B. Mohamed**
+Engineer — MSAR ALHLWL Information Technology EST
+
+🔗 GitHub: https://github.com/Moug-lab
+
+---
